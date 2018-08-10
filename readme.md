@@ -24,3 +24,7 @@ const set2 = new WeakishSet()
 set2.add({})
 set2.add('test')
 ```
+
+## Related
+
+* [weakish-map](https://github.com/lamansky/weakish-map)
