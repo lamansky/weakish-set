@@ -16,6 +16,9 @@
   "repository": "lamansky/weakish-set",
   "main": "index.js",
   "files": [],
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "dependencies": {
     "weakable": "^1.0.0"
   },

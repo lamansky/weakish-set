@@ -7,9 +7,10 @@ const _strong = Symbol('strong')
 const _weak = Symbol('weak')
 
 module.exports = class WeakishSet {
-  constructor (items) {
+  constructor (items = []) {
     this[_strong] = new Set()
     this[_weak] = new WeakSet()
+    for (const item of items) this.add(item)
   }
 
   [_set] (item) { return weakable(item) ? this[_weak] : this[_strong] }
